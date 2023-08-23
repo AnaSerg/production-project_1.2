@@ -29,14 +29,21 @@ export function buildLoaders({isDev}: BuildOptions): webpack.RuleSetRule[] {
         exclude: /node_modules/,
     }
 
-    const fileLoader: webpack.RuleSetRule = {
-            test: /\.(woff|woff2|eot|ttf|otf)$/i,
+    const fileLoader = {
+            test: /\.(png|jpg|jpeg|gif|woff|woff2|eot|ttf|otf)$/i,
             type: 'asset/resource',
+    }
+
+    const svgLoader = {
+        test: /\.svg$/i,
+        issuer: /\.[jt]sx?$/,
+        use: ['@svgr/webpack'],
     }
 
     return [
         typescriptLoader,
         scssLoader,
-        fileLoader
+        fileLoader,
+        svgLoader
     ]
 }
