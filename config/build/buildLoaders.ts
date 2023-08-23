@@ -29,8 +29,14 @@ export function buildLoaders({isDev}: BuildOptions): webpack.RuleSetRule[] {
         exclude: /node_modules/,
     }
 
+    const fileLoader: webpack.RuleSetRule = {
+            test: /\.(woff|woff2|eot|ttf|otf)$/i,
+            type: 'asset/resource',
+    }
+
     return [
         typescriptLoader,
         scssLoader,
+        fileLoader
     ]
 }
