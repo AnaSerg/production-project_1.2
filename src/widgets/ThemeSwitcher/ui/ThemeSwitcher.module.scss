@@ -1,11 +1,5 @@
-@import 'app/styles/mixins/mixins';
+@import 'app/styles/mixins/mixins.scss';
 
 .ThemeSwitcher {
   @include size (20px, 20px);
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  &:hover {
-    opacity: .6;
-  }
 }
