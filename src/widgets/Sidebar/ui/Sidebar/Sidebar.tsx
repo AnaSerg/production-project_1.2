@@ -1,7 +1,7 @@
 import {classNames} from "shared/lib/classNames/classNames";
 import {FC, useState} from "react";
 import cls from './Sidebar.module.scss';
-import {ThemeSwitcher} from "shared/ui/ThemeSwitcher";
+import {ThemeSwitcher} from "widgets/ThemeSwitcher";
 import {Navbar} from "widgets/Navbar";
 
 interface SidebarProps {

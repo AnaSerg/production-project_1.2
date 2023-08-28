@@ -1,8 +1,11 @@
+import {useTranslation} from "react-i18next";
 
 const MaterialsPage = () => {
+    const { t } = useTranslation('materials');
+
     return (
         <div>
-            Materials
+            {t('Материалы')}
         </div>
     );
 };

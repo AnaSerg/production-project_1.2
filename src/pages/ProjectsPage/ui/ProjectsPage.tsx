@@ -1,8 +1,11 @@
+import {useTranslation} from "react-i18next";
 
 const ProjectsPage = () => {
+    const { t } = useTranslation('projects');
+
     return (
         <div>
-            Projects
+            {t('Проекты')}
         </div>
     );
 };

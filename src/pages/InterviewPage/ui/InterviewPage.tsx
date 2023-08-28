@@ -1,8 +1,11 @@
+import {useTranslation} from "react-i18next";
 
 const InterviewPage = () => {
+    const { t } = useTranslation('interview');
+
     return (
         <div>
-            Interview
+            {t('Интервью')}
         </div>
     );
 };

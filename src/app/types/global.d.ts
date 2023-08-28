@@ -11,3 +11,5 @@ declare module "*.svg" {
     const SVG: React.VFC<React.SVGProps<SVGElement>>;
     export default SVG;
 }
+
+declare const IS_DEV: boolean;
