@@ -4,6 +4,7 @@ import cls from './Sidebar.module.scss';
 import {ThemeSwitcher} from "widgets/ThemeSwitcher";
 import {Navbar} from "widgets/Navbar";
 import { Button } from "shared/ui/Button";
+import {LangSwitcher} from "widgets/LangSwitcher/ui/LangSwitcher";
 
 interface SidebarProps {
     className?: string;
@@ -19,10 +20,10 @@ export const Sidebar: FC<SidebarProps> = ({className}) => {
     return (
         <div className={classNames(cls.Sidebar, {[cls.hidden]: hidden}, [className])}>
             {/* <Navbar /> */}
-            <Button onClick={onToggle}>toggle</Button>
+            <Button onClick={onToggle}>Сдвинуть</Button>
             <div className={cls.switchers}>
                 <ThemeSwitcher />
-                {/* LangSwitcher */}
+                <LangSwitcher />
             </div>
         </div>
     );
