@@ -1,5 +1,5 @@
-import {InterviewAsyncPage} from "./ui/InterviewPage.async";
+import { InterviewAsyncPage } from './ui/InterviewPage.async';
 
 export {
-    InterviewAsyncPage as InterviewPage
-}
+    InterviewAsyncPage as InterviewPage,
+};

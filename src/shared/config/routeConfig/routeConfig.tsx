@@ -1,9 +1,9 @@
-import {RouteProps} from "react-router-dom";
-import {MainPage} from "pages/MainPage";
-import {TestsPage} from "pages/TestsPage";
-import {ProjectsPage} from "pages/ProjectsPage";
-import {InterviewPage} from "pages/InterviewPage";
-import {MaterialsPage} from "pages/MaterialsPage";
+import { RouteProps } from 'react-router-dom';
+import { MainPage } from 'pages/MainPage';
+import { TestsPage } from 'pages/TestsPage';
+import { ProjectsPage } from 'pages/ProjectsPage';
+import { InterviewPage } from 'pages/InterviewPage';
+import { MaterialsPage } from 'pages/MaterialsPage';
 
 enum AppRoutes {
     MAIN = 'main',
@@ -19,27 +19,27 @@ export const RoutePath: Record<AppRoutes, string> = {
     [AppRoutes.PROJECTS]: 'projects',
     [AppRoutes.INTERVIEW]: 'interview',
     [AppRoutes.MATERIALS]: 'materials',
-}
+};
 
 export const routeConfig: Record<AppRoutes, RouteProps> = {
     [AppRoutes.MAIN]: {
         path: RoutePath.main,
-        element: <MainPage />
+        element: <MainPage />,
     },
     [AppRoutes.TESTS]: {
         path: RoutePath.tests,
-        element: <TestsPage />
+        element: <TestsPage />,
     },
     [AppRoutes.PROJECTS]: {
         path: RoutePath.projects,
-        element: <ProjectsPage />
+        element: <ProjectsPage />,
     },
     [AppRoutes.INTERVIEW]: {
         path: RoutePath.interview,
-        element: <InterviewPage />
+        element: <InterviewPage />,
     },
     [AppRoutes.MATERIALS]: {
         path: RoutePath.materials,
-        element: <MaterialsPage />
-    }
-}
+        element: <MaterialsPage />,
+    },
+};

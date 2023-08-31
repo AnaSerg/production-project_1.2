@@ -1,5 +1,5 @@
-import {ProjectsPageAsync} from "./ui/ProjectsPage.async";
+import { ProjectsPageAsync } from './ui/ProjectsPage.async';
 
 export {
-    ProjectsPageAsync as ProjectsPage
-}
+    ProjectsPageAsync as ProjectsPage,
+};

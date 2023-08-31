@@ -1,5 +1,5 @@
-import {MaterialsPageAsync} from "./ui/MaterialsPage.async";
+import { MaterialsPageAsync } from './ui/MaterialsPage.async';
 
 export {
-    MaterialsPageAsync as MaterialsPage
-}
+    MaterialsPageAsync as MaterialsPage,
+};
