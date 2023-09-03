@@ -1,8 +1,9 @@
 .Button {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  &:hover {
-    opacity: .6;
-  }
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+        opacity: .6;
+    }
 }
