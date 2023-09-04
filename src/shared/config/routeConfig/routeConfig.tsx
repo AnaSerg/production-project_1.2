@@ -4,13 +4,15 @@ import { TestsPage } from 'pages/TestsPage';
 import { ProjectsPage } from 'pages/ProjectsPage';
 import { InterviewPage } from 'pages/InterviewPage';
 import { MaterialsPage } from 'pages/MaterialsPage';
+import { NotFoundPage } from 'pages/NotFoundPage';
 
 enum AppRoutes {
     MAIN = 'main',
     TESTS = 'tests',
     PROJECTS = 'projects',
     INTERVIEW = 'interview',
-    MATERIALS = 'materials'
+    MATERIALS = 'materials',
+    NOT_FOUND = 'not_found'
 }
 
 export const RoutePath: Record<AppRoutes, string> = {
@@ -19,6 +21,7 @@ export const RoutePath: Record<AppRoutes, string> = {
     [AppRoutes.PROJECTS]: 'projects',
     [AppRoutes.INTERVIEW]: 'interview',
     [AppRoutes.MATERIALS]: 'materials',
+    [AppRoutes.NOT_FOUND]: '*',
 };
 
 export const routeConfig: Record<AppRoutes, RouteProps> = {
@@ -41,5 +44,9 @@ export const routeConfig: Record<AppRoutes, RouteProps> = {
     [AppRoutes.MATERIALS]: {
         path: RoutePath.materials,
         element: <MaterialsPage />,
+    },
+    [AppRoutes.NOT_FOUND]: {
+        path: RoutePath.not_found,
+        element: <NotFoundPage />,
     },
 };

@@ -1,3 +1,10 @@
 {
-  "Перевод": "РУ"
+  "Перевод": "РУ",
+  "Такой страницы не существует": "The page you were looking for, doesn't exist :(",
+  "Описание страницы 404": "We may have changed, moved, renamed or removed the page you were looking for. Go to main page, that definitely exists.",
+  "Проекты": "Projects",
+  "Пройти собеседование":  "Pass interview",
+  "Материалы":  "Materials",
+  "Главная": "Main",
+  "Тесты": "Tests"
 }
