@@ -3,6 +3,7 @@
 .PageLoader {
   @include flex-center;
 
-  width: 100%;
+  margin: 0 auto;
+  width: fit-content;
   height: 100vh;
 }

@@ -4,15 +4,23 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
+    border-radius: 20px;
+    font: var(--font-button);
 
     &:hover {
         opacity: .6;
     }
 }
 
+.primary {
+    padding: 8px 32px;
+    background-color: var(--button-color);
+    color: #fff;
+}
+
 .round {
     border-radius: 50%;
-    background: url('../../../assets/icons/arrow-btn-left-white.svg') center no-repeat var(--round-button-color);
+    background: url('../../../assets/icons/arrow-btn-left-white.svg') center no-repeat var(--button-color);
 
     @include size(40px, 40px);
 }
